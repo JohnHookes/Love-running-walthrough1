@@ -5,7 +5,14 @@
     box-sizing: border-box;
 }
 
-
+/* General style rules*/
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    /* generic style rules*/
+    color:#3a3a3a;
+}
 
 /*Header*/
 header{
@@ -15,6 +22,9 @@ header{
 /*main*/
 main{
     background-color: lightblue;
+
+    /*makes main part of page take up any surplus space */
+    flex: 1 0 auto;
 }
 
 /*footer*/
