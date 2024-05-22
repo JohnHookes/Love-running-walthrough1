@@ -97,6 +97,15 @@ body {
 
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
 /*Header*/
 header {
   background-color: #ffffff;
@@ -129,12 +138,7 @@ header a {
   color: inherit;
 }
 
-h1 {
-  font-family: 'oswald', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
-}
+
 
 #menu {
   font-size: 110%;
@@ -164,34 +168,52 @@ nav {
 
 /*main*/
 main {
-  
+
   /*makes main part of page take up any surplus space */
   flex: 1 0 auto;
   margin-top: 47px;
 }
 
 /* Hero */
-#hero{
-  height:600px;
+#hero {
+  height: 600px;
   width: 100%;
   background: url(../images/hero-image.webp) no-repeat center center/cover;
+  position: relative;
+}
+/* hero cover text */
+#cover-text {
+  background-color: rgba(249, 109, 107, .7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
 }
 
+#cover-text>h2,
+#cover-text>h3 {
+ color:#ffffff
+}
+
+
 /*footer*/
-#social-media{
+#social-media {
   text-align: center;
   padding: 20px o;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   list-style-type: none;
 }
 
-#social-media i{
+#social-media i {
   font-size: 160%;
   padding: 5%;
-  color:#3a3a3a;
+  color: #3a3a3a;
 }
-  
+
 
 /* media query set for tablets and larger */
 
@@ -205,31 +227,37 @@ main {
     width: fit-content;
     padding-right: 1rem;
   }
-    #menu {
-      display: flex;
-    }
 
-    #menu>li {
-      padding-left: 1rem;
-    }
-
-    .nav-toggle-label{
-      display: none;
-    }
-
-    #logo {
-      font-size: 280%;
-      line-height: 75px;
-      margin:  0 0.5rem;
+  #menu {
+    display: flex;
   }
-    main{
-      margin-top: 79px;
-    }
 
+  #menu>li {
+    padding-left: 1rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
+
+  main {
+    margin-top: 79px;
+  }
+/* Hero */
+  #cover-text {
+    width: 300px;
+    right:50px;
+  }
 }
 
-    @media screen and (min-width: 992px) {
-      #menu a:hover{
-        border-bottom: 1px solid #3a3a3a;
-      }
-    }
+@media screen and (min-width: 992px) {
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
+}
