@@ -171,9 +171,13 @@ main {
 }
 
 /*footer*/
-footer {
-  background-color: orange;
+#social-media{
+  text-align: center;
+  padding: 20px o;
+  display:flex;
+  justify-content: space-evenly;
 }
+  
 
 /* media query set for tablets and larger */
 
