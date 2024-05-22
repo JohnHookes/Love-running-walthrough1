@@ -92,6 +92,8 @@ body{
     flex-direction: column;
     /* generic style rules*/
     color:#3a3a3a;
+    font-family:'lato', san-serif;
+
 }
 
 /*Header*/
