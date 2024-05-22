@@ -8,149 +8,169 @@
 /* <weight>: Use a value from 400 to 700 */
 /* Lato Font*/
 .lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .lato-light {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .lato-bold {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .lato-black {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .lato-thin-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .lato-regular-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .lato-bold-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .lato-black-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  /*Oswald font classes */
-  /* <uniquifier>: Use a unique and descriptive class name
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*Oswald font classes */
+/* <uniquifier>: Use a unique and descriptive class name
    <weight>: Use a value from 200 to 700  */
-  
-  .oswald-<uniquifier> {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
-  
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 /* Wildcard selector to overide default styles from browser*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* General style rules*/
-body{
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
-    /* generic style rules*/
-    color:#3a3a3a;
-    font-family:'lato', san-serif;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* generic style rules*/
+  color: #3a3a3a;
+  font-family: 'lato', san-serif;
 
 }
 
 /*Header*/
-header{
-    background-color: #ffffff;
-    padding: o 1rem;
-    position:fixed;
-    z-index: 99;
-    width:100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+header {
+  background-color: #ffffff;
+  padding: o 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-header a{
+/* Nav toggle*/
+#nav-toggle:checked~nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none
+}
+
+.nav-toggle-label{
+  font-size: 2rem;
+}
+
+
+header a {
   text-decoration: none;
   color: inherit;
 }
 
-h1{
-    font-family:'oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+h1 {
+  font-family: 'oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
-#menu{
+
+#menu {
   font-size: 110%;
   letter-spacing: 4px;
   list-style-type: none;
 }
 
-#menu > li{
+#menu>li {
   margin-bottom: 1em;
 }
 
-.active{
+.active {
   border-bottom: 1px solid #3a3a3a;
 }
 
 /* Nav bar styles with drop down toggle*/
-nav{
+nav {
   position: absolute;
   background-color: #ffffff;
-  width:100%;
+  width: 100%;
   left: 0;
   padding: 0 1rem;
   box-shadow: 0 2px 2px #3a3a3a;
   display: none;
+  top: 100%;
 }
 
 /*main*/
-main{
-    background-color: lightblue;
+main {
+  background-color: lightblue;
 
-    /*makes main part of page take up any surplus space */
-    flex: 1 0 auto;
+  /*makes main part of page take up any surplus space */
+  flex: 1 0 auto;
 }
 
 /*footer*/
-footer{
-    background-color: orange;
+footer {
+  background-color: orange;
 }
