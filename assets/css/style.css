@@ -119,7 +119,7 @@ header {
   display: none
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   font-size: 2rem;
 }
 
@@ -173,4 +173,32 @@ main {
 /*footer*/
 footer {
   background-color: orange;
+}
+
+/* media query set for tablets and larger */
+
+@media screen and (min-width: 768px) {
+  /* header */
+
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+
+    #menu {
+      display: flex;
+    }
+
+    #menu > li{
+      padding-left: 1rem;
+    }
+
+    .nav-toggle-label{
+      display:none;
+    }
+
+  }
+
 }
