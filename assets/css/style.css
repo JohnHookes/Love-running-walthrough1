@@ -165,9 +165,9 @@ nav {
 /*main*/
 main {
   background-color: lightblue;
-
   /*makes main part of page take up any surplus space */
   flex: 1 0 auto;
+  margin-top: 47px;
 }
 
 /*footer*/
