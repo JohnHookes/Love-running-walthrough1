@@ -178,6 +178,12 @@ main {
   justify-content: space-evenly;
   list-style-type: none;
 }
+
+#social-media i{
+  font-size: 160%;
+  padding: 5%;
+  color:#3a3a3a;
+}
   
 
 /* media query set for tablets and larger */
