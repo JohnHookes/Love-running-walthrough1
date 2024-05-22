@@ -101,6 +101,10 @@ header{
     background-color: coral;
 }
 
+h1{
+    font-family:'oswald', sans-serif;
+}
+
 /*main*/
 main{
     background-color: lightblue;
