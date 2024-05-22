@@ -176,6 +176,7 @@ main {
   padding: 20px o;
   display:flex;
   justify-content: space-evenly;
+  list-style-type: none;
 }
   
 
