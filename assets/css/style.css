@@ -181,6 +181,7 @@ main {
   background: url(../images/hero-image.webp) no-repeat center center/cover;
   position: relative;
 }
+
 /* hero cover text */
 #cover-text {
   background-color: rgba(249, 109, 107, .7);
@@ -195,8 +196,9 @@ main {
 
 #cover-text>h2,
 #cover-text>h3 {
- color:#ffffff
+  color: #ffffff
 }
+
 /* Reasons Section */
 #reasons {
   width: 90%;
@@ -211,27 +213,35 @@ main {
 
 #benefits-physical>div,
 #benefits-mental>div {
-    line-height: 20px;
-    margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 #benefits p {
   padding: 0 20px;
 }
 
-hr {
+#benefits hr {
   border-top: 1px solid #3a3a3a;
   margin: 5px 0;
 }
 
 /* Reasons circle image*/
-#circle-cover-bg{
-  width: 90vh;
-  height: 90vh;
+#circle-cover-bg {
+  background: url(../images/reasons-image.webp) no-repeat top center/ cover;
+  height: 90%;
+  width: 90%;
   margin-bottom: 20px;
-  background: url(../images/reasons-image.webp) no-repeat center center/cover;
   /* Make image a circle*/
   border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -285,15 +295,60 @@ hr {
   main {
     margin-top: 79px;
   }
-/* Hero */
+
+  /* Hero */
   #cover-text {
     width: 300px;
-    right:50px;
+    right: 50px;
+  }
+
+  #benefits-physical,
+  #benefits-mental{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  }
+
+  #benefits-physical > div,
+  #benefits-mental > div{
+  width:75%;
+  }
+
+  #benefits-mental > div {
+  text-align: end;
+  align-self: flex-end;
   }
 }
 
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #benefits{
+    display:flex;
+    flex-direction: row;
+  }
+
+  #benefits > div {
+    flex: 1;
+  }
+
+  #benefits-image{
+    order: 0;
+  }
+
+  #benefits-mental{
+    order: 1;
+  }
+
+  #benefits-mental > div{
+    align-self: flex-start;
+  }
+
+  #benefits-physical > div{
+    align-self: flex-end;
   }
 }
